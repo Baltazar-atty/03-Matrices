@@ -6,26 +6,30 @@
 
 // Trabajo Practico N°3
 // No cambies los nombres de las funciones.
-
+const arraynumeros = ['1', '2', '3', '4'];
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
-  // Tu código: 
+  // Tu código:
   return array[0];
 
 }
 
+const arrayultimoelemento = ['1', '2', '3', '4'];
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  
   return array[array.length - 1];
 }
 
+const arraylargodelarray = ['1', '2', '3', '4'];
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return array.length;
 }
 
+const arrayincrementarporuno = ['1', '2', '3', '4'];
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
@@ -37,14 +41,16 @@ function incrementarPorUno(array) {
   return array;
 }
 
+const arrayagregaritemalfinal = ['1', '2', '3', '4'];
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
-  // Tu código:
+  // Tu código:    
   array.push(elemento);
   return array;
 }
 
+const arrayagregaritemalcomienzo = ['1', '2', '3', '4'];
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
@@ -54,6 +60,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   return array;
 }
 
+const arraydePalabrasAFrase = ['hola', 'todo', 'bien', 'gente?'];
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
@@ -64,11 +71,12 @@ function dePalabrasAFrase(palabras) {
   return array;
 }
 
-function arrayContiene(array, elemento) {
+const arrayContieneElemento = ['1', 'elemento', '3', '4'];
+function arrayContiene(arrayContieneElemento, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  array = array.includes(elemento);
+  array = arrayContieneElemento.includes(elemento);
   return array;
 }
 
@@ -76,6 +84,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
 }
 
 function promedioResultadosTest(resultadosTest) {
