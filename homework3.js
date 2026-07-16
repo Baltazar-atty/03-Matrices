@@ -1,6 +1,6 @@
-//Nombre y Apellido:
-//Curso: 
-//Grupo
+//Nombre y Apellido: Baltazar López 
+//Curso: 6B
+//Grupo: 604
 //Taller de Programacion III
 //Departamento de Informatica - EESTn°1 - Raul Scalabrini Ortiz
 
@@ -9,7 +9,8 @@
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
-  // Tu código:
+  // Tu código: 
+
 }
 
 function devolverUltimoElemento(array) {
