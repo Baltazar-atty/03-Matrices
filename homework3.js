@@ -6,7 +6,7 @@
 
 // Trabajo Practico N°3
 // No cambies los nombres de las funciones.
-const arraynumeros = ['1', '2', '3', '4'];
+const arraynumeros = [1, 2, 3, 4];
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
@@ -14,7 +14,7 @@ function devolverPrimerElemento(array) {
 
 }
 
-const arrayultimoelemento = ['1', '2', '3', '4'];
+const arrayultimoelemento = [1, 2, 3, 4];
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
@@ -22,14 +22,14 @@ function devolverUltimoElemento(array) {
   return array[array.length - 1];
 }
 
-const arraylargodelarray = ['1', '2', '3', '4'];
+const arraylargodelarray = [1, 2, 3, 4];
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // // Tu código:ghjghj
   return array.length;
 }
 
-const arrayincrementarporuno = ['1', '2', '3', '4'];
+const arrayincrementarporuno = [1, 2, 3, 4];
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
@@ -41,7 +41,7 @@ function incrementarPorUno(array) {
   return array;
 }
 
-const arrayagregaritemalfinal = ['1', '2', '3', '4'];
+const arrayagregaritemalfinal = [1, 2, 3, 4];
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
@@ -50,7 +50,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   return array;
 }
 
-const arrayagregaritemalcomienzo = ['1', '2', '3', '4'];
+const arrayagregaritemalcomienzo = [1, 2, 3, 4];
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
@@ -71,50 +71,99 @@ function dePalabrasAFrase(palabras) {
   return array;
 }
 
-const arrayContieneElemento = ['1', 'elemento', '3', '4'];
-function arrayContiene(arrayContieneElemento, elemento) {
+const arrayContieneE = [1, 2, 3, 4];
+function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  array = arrayContieneElemento.includes(elemento);
+  array = array.includes(elemento);
   return array;
 }
 
+const arraySuma = [1, 2, 3, 4];
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+  }
+  return suma;
 
 }
 
+const arrayPromedios = [1, 2, 3, 4];
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  let suma = 0;
+  for (let i = 0; i < resultadosTest.length; i++) {
+    suma += resultadosTest[i];
+  }
+  return suma / resultadosTest.length;
+
 }
 
+const arrayMásGrande = [1, 2, 3, 4];
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  let max = numeros[0];
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i];
+    }
+  }
+  return max;
+
 }
 
+const arrayMultiplicarArgumentos = [1, 2, 3, 4];
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  if (arguments.length === 0) {
+    return 0;
+  }
+  if (arguments.length === 1) {
+    return arguments[0];
+  }
+  let producto = 1;
+  for (let i = 0; i < arguments.length; i++) {
+    producto *= arguments[i];
+  }
+  return producto;
+
 }
 
+const arraycuentoElementos = [1, 2, 3, 4, 20, 30, 40];
 function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  let count = 0;
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] > 18) {
+      count++;
+    }
+  }
+  return count;
+
 }
 
+const arraydiaDeLaSemana = [1, 2, 3, 4, 5, 6, 7];
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario.
   //Escribe tu código aquí
+  if (numeroDeDia === 6 || numeroDeDia === 7) {
+    return "Es fin de semana";
+  }
+  return "Es dia Laboral";
 }
 
 function empiezaConNueve(n) {
