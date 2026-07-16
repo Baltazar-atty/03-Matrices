@@ -154,7 +154,6 @@ function cuentoElementos(arreglo) {
 
 }
 
-const arraydiaDeLaSemana = [1, 2, 3, 4, 5, 6, 7];
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
@@ -170,6 +169,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+  if (n.toString()[0] === '9') {
+    return true;
+  }
+  return false;
 }
 
 function todosIguales(arreglo) {
