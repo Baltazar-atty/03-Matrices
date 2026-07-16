@@ -175,23 +175,51 @@ function empiezaConNueve(n) {
   return false;
 }
 
+const arraytodosIguales = [1, 1, 1, 1];
+const arraytodosIguales2 = [1, 2, 3, 4];
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
+  for (let i = 1; i < arreglo.length; i++) {
+    if (arreglo[i] !== arreglo[0]) {
+      return false;
+    }
+  }
+  return true;
 }
+
+const arraymesesDelAño = ["Enero", "Marzo", "Abril", "Noviembre", "Mayo", "Febrero", "Julio", "Septiembre", "Octubre", "Junio", "Diciembre", "Agosto"];
+const arraymesesDelAñoIncompleto = ["Marzo", "Abril", "Mayo", "Febrero", "Julio", "Septiembre", "Octubre", "Junio", "Diciembre", "Agosto"];
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  const mesesEncontrados = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      mesesEncontrados.push(array[i]);
+    }
+  }
+  if (mesesEncontrados.length === 3) {
+    return mesesEncontrados;
+  } else {
+    return "No se encontraron los meses pedidos";
+  }
 }
 
+const arraymayorACien = [50, 150, 200, 75, 125];
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 100) {
+      return array[i];
+    }
+  }
 }
 
 function breakStatement(numero) {
