@@ -25,7 +25,7 @@ function devolverUltimoElemento(array) {
 const arraylargodelarray = ['1', '2', '3', '4'];
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
-  // Tu código:
+  // // Tu código:ghjghj
   return array.length;
 }
 
